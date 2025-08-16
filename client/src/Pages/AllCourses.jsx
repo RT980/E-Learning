@@ -82,7 +82,7 @@ function AllCourses() {
             {filteredCourses.map((item) => (
               <div
                 key={item._id}
-                className="w-[420px] bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group overflow-hidden"
+                className="w-[400px] bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group overflow-hidden"
               >
                 <div className="relative overflow-hidden">
                   <img
