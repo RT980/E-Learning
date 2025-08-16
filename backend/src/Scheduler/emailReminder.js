@@ -17,7 +17,7 @@ const sentReminders = new Set();
 
 // Run every 10 minutes
 cron.schedule("*/10 * * * *", async () => {
-  console.log("⏰ Running assignment reminder scheduler...");
+  // console.log("⏰ Running assignment reminder scheduler...");
 
   const now = new Date();
   const inOneHour = new Date(now.getTime() + 60 * 60 * 1000);
