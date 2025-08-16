@@ -219,7 +219,11 @@ This project is licensed under the **[MIT License](LICENSE)**—freely usable an
 
 ## 👤 Maintainer
 
+<<<<<<< HEAD
 **[]** 
+=======
+**\[]** 
+>>>>>>> 928caee4ba7e0e9b2a6cf3f5ffa1cfc45fd64a44
 
 * GitHub: (https://github.com/RT980)
 * Email: [chaudharyritesh2078@gmail.com](mailto:chaudharyritesh2078@gmail.com)
