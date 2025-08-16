@@ -219,7 +219,7 @@ This project is licensed under the **[MIT License](LICENSE)**—freely usable an
 
 ## 👤 Maintainer
 
-**\[Laxman B. Ghimire]** 
+**\[]** 
 
 * GitHub: (https://github.com/RT980)
 * Email: [chaudharyritesh2078@gmail.com](mailto:chaudharyritesh2078@gmail.com)
