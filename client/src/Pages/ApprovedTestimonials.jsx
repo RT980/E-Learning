@@ -55,7 +55,7 @@ function ApprovedTestimonials() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 mb-4 text-left">GRAB THE BEST OF</h2>
         <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-12 text-left">
-          How can Sipalaya transform your <span className="text-blue-600">career?</span>
+          How can <span className="text-blue-700">EduSaathi </span>Platform transform your <span className="text-blue-600">career?</span>
         </h3>
 
         <div className="flex flex-col lg:flex-row gap-8">

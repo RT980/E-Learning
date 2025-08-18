@@ -41,7 +41,7 @@ function AboutUs() {
             Background
           </h2>
           <p className="text-lg font-serif leading-relaxed text-gray-700 mt-4">
-            Sipalaya InfoTech is a leading IT Learning Academy in Nepal,
+            E-Learning Platform is a leading IT Learning Academy in Nepal,
             passionately committed to equipping individuals with in-demand
             skills to thrive in today's digital age. Since our inception, we’ve
             bridged the gap between traditional education and the evolving needs

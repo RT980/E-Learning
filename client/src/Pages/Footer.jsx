@@ -1,4 +1,5 @@
-import sipalayalogo from "../assets/sipalayalogo.png";
+
+import elearninglogo from "../assets/logo.png"
 import esewa from "../images/esewa.png";
 import khalti from "../images/Khalti.png";
 import stripe from "../images/stripe.png";
@@ -15,21 +16,16 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-800">
+      <div className="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-gray-800">
         {/* Logo & Description */}
-        <div className="space-y-4">
-          <img className="h-14" src={sipalayalogo} alt="Sipalaya Logo" />
+        <div className="space-z-2">
+          <img className="h-30 pb-5 pr-10" src={elearninglogo} alt="EduSaathi" />
           <p>
-            At <span className="font-bold">Sipalaya</span>, We're here to help
-            you thrive. Learn in-demand skills, get hired, and advance your
-            career with us. Join today and start your journey to success.
+            <span className="font-bold">WhatsApp / Phone:</span> 9823587645 |
+            9806123454
           </p>
           <p>
-            <span className="font-bold">WhatsApp / Phone:</span> 9851344071 |
-            9806393939
-          </p>
-          <p>
-            <span className="font-bold">Gmail:</span> infotech@sipalaya.com
+            <span className="font-bold">Gmail:</span> edusaathi@gmail.com
           </p>
         </div>
 
@@ -155,7 +151,7 @@ function Footer() {
         <div className="mt-8 pt-6 border-t border-white/10">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center">
             <div className="text-white/80 text-sm">
-              &copy; 2025 Sipalaya Infotech Pvt. Ltd.&reg; | All Rights Reserved
+              &copy; 2025 EduSaathi Pvt. Ltd.&reg; | All Rights Reserved
             </div>
 
             <div className="flex items-center space-x-4">

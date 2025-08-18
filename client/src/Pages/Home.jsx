@@ -39,16 +39,16 @@ function Home() {
     getCourse();
   }, []);
 
-  // const CustomArrow = ({ direction, onClick }) => (
-  //   <button
-  //     onClick={onClick}
-  //     className={`absolute top-1/2  text-2xl bg-amber-500 text-blue-950 rounded-full p-2  hover:bg-blue-950 hover:text-white transition-all ${
-  //       direction === "prev" ? "top-80 left-52" : "top-80 left-40"
-  //     }`}
-  //   >
+  const CustomArrow = ({ direction, onClick }) => (
+    <button
+      onClick={onClick}
+      className={`absolute top-1/2  text-2xl bg-amber-500 text-blue-950 rounded-full p-2  hover:bg-blue-950 hover:text-white transition-all ${
+        direction === "prev" ? "top-80 left-52" : "top-80 left-40"
+      }`}
+    >
 
-  //   </button>
-  // );
+    </button>
+  );
 
   const slides = [
     {
@@ -326,7 +326,7 @@ function Home() {
             </h1>
             <p className="text-l relative left-16 font-serif">
               From Critical skills To Technical Topics,{" "}
-              <span className="font-bold">Sipalaya InfoTech</span> Supports Your
+              <span className="font-bold">EduSaathi </span> Supports Your
               Professional{" "}
             </p>
           </div>

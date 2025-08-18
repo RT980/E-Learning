@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import sipalayalogo from "../assets/sipalayalogo.png";
+import elearning from "../assets/logo.png"
 
 function AnnouncementHeader() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,11 +19,11 @@ function AnnouncementHeader() {
   }, [announcements.length]);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-white py-2 shadow-xl">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-white py-1 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo with subtle glow */}
         <img
-          src={sipalayalogo}
+          src={elearning} 
           alt="Logo"
           className="h-14 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:drop-shadow-glow"
         />
