@@ -76,13 +76,13 @@ function AllCourses() {
       </div>
 
       {/* Courses List */}
-      <div className="p-10 min-h-screen ">
+      <div className="p-5 min-h-screen ">
         {filteredCourses.length > 0 ? (
           <div className="flex flex-wrap ml-12 gap-12 mt-12 ">
             {filteredCourses.map((item) => (
               <div
                 key={item._id}
-                className="w-[400px] bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group overflow-hidden"
+                className="w-[400px] bg-gray-200 rounded-2xl shadow-lg hover:shadow-gray-500 transition-all duration-300 group overflow-hidden"
               >
                 <div className="relative overflow-hidden">
                   <img

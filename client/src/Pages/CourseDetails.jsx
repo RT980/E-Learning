@@ -1,6 +1,7 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState} from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { CartContext } from "../Context/CartProvider";
+
 import {
   FaRegStar,
   FaStar,
@@ -20,6 +21,9 @@ import {
   FaBriefcase,
   FaGraduationCap,
 } from "react-icons/fa";
+
+
+
 
 function CourseDetails() {
   const location = useLocation();
@@ -73,8 +77,8 @@ function CourseDetails() {
   const discountPercentage =
     item.discountPrice && item.price && item.discountPrice > item.price
       ? Math.round(
-          ((item.discountPrice - item.price) / item.discountPrice) * 100
-        )
+        ((item.discountPrice - item.price) / item.discountPrice) * 100
+      )
       : 0;
 
   // Helper to render each "What You Will Learn" section
@@ -233,21 +237,19 @@ function CourseDetails() {
           {/* Course Tabs */}
           <div className="flex border-b border-gray-200 mb-6">
             <button
-              className={`px-4 py-3 font-medium ${
-                activeTab === "about"
-                  ? "text-blue-600 border-b-2 border-blue-600"
-                  : "text-gray-500 hover:text-blue-600"
-              }`}
+              className={`px-4 py-3 font-medium ${activeTab === "about"
+                ? "text-blue-600 border-b-2 border-blue-600"
+                : "text-gray-500 hover:text-blue-600"
+                }`}
               onClick={() => setActiveTab("about")}
             >
               About
             </button>
             <button
-              className={`px-4 py-3 font-medium ${
-                activeTab === "reviews"
-                  ? "text-blue-600 border-b-2 border-blue-600"
-                  : "text-gray-500 hover:text-blue-600"
-              }`}
+              className={`px-4 py-3 font-medium ${activeTab === "reviews"
+                ? "text-blue-600 border-b-2 border-blue-600"
+                : "text-gray-500 hover:text-blue-600"
+                }`}
               onClick={() => setActiveTab("reviews")}
             >
               Reviews
@@ -387,13 +389,23 @@ function CourseDetails() {
 
               <div className="flex flex-col gap-3 mb-4">
                 <button
-                  onClick={() => dispatch({ type: "AddToCart", payload: item })}
+                  onClick={() => {
+                    dispatch({ type: "AddToCart", payload: item });
+                    navigate("/cart");
+                  }}
                   className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-medium py-3 px-4 rounded-lg transition duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   Add to Cart
                 </button>
 
-                <button  className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-4 rounded-lg transition duration-200">
+                <button
+                  onClick={() => {
+                     navigate("/payment", { state: { orderId: item._id, item } });
+
+                    }
+                  }
+                  className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-4 rounded-lg transition duration-200"
+                >
                   Buy Now
                 </button>
               </div>

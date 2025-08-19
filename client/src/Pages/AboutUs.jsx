@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import aboutbackground from "../images/aboutbackground.png";
 import ceoImage from "../images/ceoImage.jpg"; 
-import instructorImage from "../images/instructorImage.jpg"; 
+import instructorImage from "../images/instructorImage.jpeg"; 
 import teamImage from "../images/teamImage.jpg";
 
 function AboutUs() {
@@ -159,7 +159,7 @@ function AboutUs() {
               className="rounded-lg shadow-lg w-full h-64 object-cover"
             />
             <h3 className="mt-4 font-semibold text-blue-900 text-lg">
-              CEO - Sipalaya InfoTech
+              CEO - EduSaathi
             </h3>
           </div>
           <div>

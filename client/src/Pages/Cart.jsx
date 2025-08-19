@@ -118,7 +118,7 @@ function Cart() {
         </h1>
 
         {cartState.cartItems.length === 0 ? (
-          <div className="text-center mt-20 flex flex-col items-center">
+          <div className="text-center text-red-500 mt-20 flex flex-col items-center">
             <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex items-center justify-center mb-4">
               <FaShoppingBag className="text-3xl text-gray-500" />
             </div>
